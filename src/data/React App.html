@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:3000/orders -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.download"></script><style>@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap);</style><style>body {
+    margin: 0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */ /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*, ::before, ::after{
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+}
+
+::backdrop{
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+}
+.visible{
+    visibility: visible;
+}
+.fixed{
+    position: fixed;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.right-4{
+    right: 1rem;
+}
+.bottom-4{
+    bottom: 1rem;
+}
+.right-2{
+    right: 0.5rem;
+}
+.top-2{
+    top: 0.5rem;
+}
+.top-0{
+    top: 0px;
+}
+.right-0{
+    right: 0px;
+}
+.top-20{
+    top: 5rem;
+}
+.right-20{
+    right: 5rem;
+}
+.top-10{
+    top: 2.5rem;
+}
+.top-14{
+    top: 3.5rem;
+}
+.right-40{
+    right: 10rem;
+}
+.right-5{
+    right: 1.25rem;
+}
+.top-16{
+    top: 4rem;
+}
+.float-right{
+    float: right;
+}
+.m-2{
+    margin: 0.5rem;
+}
+.m-3{
+    margin: 0.75rem;
+}
+.m-4{
+    margin: 1rem;
+}
+.mb-10{
+    margin-bottom: 2.5rem;
+}
+.mb-2{
+    margin-bottom: 0.5rem;
+}
+.mt-3{
+    margin-top: 0.75rem;
+}
+.mt-10{
+    margin-top: 2.5rem;
+}
+.mb-6{
+    margin-bottom: 1.5rem;
+}
+.ml-1{
+    margin-left: 0.25rem;
+}
+.ml-3{
+    margin-left: 0.75rem;
+}
+.ml-4{
+    margin-left: 1rem;
+}
+.mt-4{
+    margin-top: 1rem;
+}
+.ml-2{
+    margin-left: 0.5rem;
+}
+.mt-2{
+    margin-top: 0.5rem;
+}
+.mt-24{
+    margin-top: 6rem;
+}
+.mb-4{
+    margin-bottom: 1rem;
+}
+.mt-12{
+    margin-top: 3rem;
+}
+.mt-6{
+    margin-top: 1.5rem;
+}
+.mt-1{
+    margin-top: 0.25rem;
+}
+.mt-8{
+    margin-top: 2rem;
+}
+.mt-5{
+    margin-top: 1.25rem;
+}
+.block{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+.flex{
+    display: flex;
+}
+.inline-flex{
+    display: inline-flex;
+}
+.grid{
+    display: grid;
+}
+.hidden{
+    display: none;
+}
+.h-2{
+    height: 0.5rem;
+}
+.h-8{
+    height: 2rem;
+}
+.h-screen{
+    height: 100vh;
+}
+.h-10{
+    height: 2.5rem;
+}
+.h-20{
+    height: 5rem;
+}
+.h-3{
+    height: 0.75rem;
+}
+.h-44{
+    height: 11rem;
+}
+.h-40{
+    height: 10rem;
+}
+.h-80{
+    height: 80px;
+}
+.h-0{
+    height: 0px;
+}
+.h-60{
+    height: 15rem;
+}
+.h-6{
+    height: 1.5rem;
+}
+.min-h-screen{
+    min-height: 100vh;
+}
+.w-72{
+    width: 18rem;
+}
+.w-0{
+    width: 0px;
+}
+.w-full{
+    width: 100%;
+}
+.w-2{
+    width: 0.5rem;
+}
+.w-8{
+    width: 2rem;
+}
+.w-screen{
+    width: 100vw;
+}
+.w-400{
+    width: 400px;
+}
+.w-10{
+    width: 2.5rem;
+}
+.w-3{
+    width: 0.75rem;
+}
+.w-40{
+    width: 10rem;
+}
+.w-96{
+    width: 24rem;
+}
+.w-9{
+    width: 2.25rem;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.resize{
+    resize: both;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.gap-2{
+    gap: 0.5rem;
+}
+.gap-5{
+    gap: 1.25rem;
+}
+.gap-4{
+    gap: 1rem;
+}
+.gap-3{
+    gap: 0.75rem;
+}
+.gap-20{
+    gap: 5rem;
+}
+.gap-1{
+    gap: 0.25rem;
+}
+.gap-10{
+    gap: 2.5rem;
+}
+.overflow-auto{
+    overflow: auto;
+}
+.rounded-full{
+    border-radius: 9999px;
+}
+.rounded-lg{
+    border-radius: 0.5rem;
+}
+.rounded-xl{
+    border-radius: 0.75rem;
+}
+.rounded-2xl{
+    border-radius: 1rem;
+}
+.rounded-3xl{
+    border-radius: 1.5rem;
+}
+.rounded{
+    border-radius: 0.25rem;
+}
+.border{
+    border-width: 1px;
+}
+.border-t-1{
+    border-top-width: 1px;
+}
+.border-r-1{
+    border-right-width: 1px;
+}
+.border-color{
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-main-bg{
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 251 251 / var(--tw-bg-opacity));
+}
+.bg-half-transparent{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-green-400{
+    --tw-bg-opacity: 1;
+    background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+.bg-slate-800{
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+.bg-slate-600{
+    --tw-bg-opacity: 1;
+    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+.bg-black{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-gray-400{
+    --tw-bg-opacity: 1;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+.bg-hero-pattern{
+    background-image: url('https://demos.wrappixel.com/premium-admin-templates/react/flexy-react/main/static/media/welcome-bg-2x-svg.25338f53.svg');
+}
+.bg-cover{
+    background-size: cover;
+}
+.bg-center{
+    background-position: center;
+}
+.bg-no-repeat{
+    background-repeat: no-repeat;
+}
+.p-3{
+    padding: 0.75rem;
+}
+.p-2{
+    padding: 0.5rem;
+}
+.p-1{
+    padding: 0.25rem;
+}
+.p-4{
+    padding: 1rem;
+}
+.p-8{
+    padding: 2rem;
+}
+.p-1\.5{
+    padding: 0.375rem;
+}
+.p-10{
+    padding: 2.5rem;
+}
+.py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.pl-4{
+    padding-left: 1rem;
+}
+.pt-3{
+    padding-top: 0.75rem;
+}
+.pb-2\.5{
+    padding-bottom: 0.625rem;
+}
+.pb-2{
+    padding-bottom: 0.5rem;
+}
+.pb-10{
+    padding-bottom: 2.5rem;
+}
+.pt-9{
+    padding-top: 2.25rem;
+}
+.pr-10{
+    padding-right: 2.5rem;
+}
+.text-center{
+    text-align: center;
+}
+.text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-14{
+    font-size: 14px;
+}
+.text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+.font-extrabold{
+    font-weight: 800;
+}
+.font-bold{
+    font-weight: 700;
+}
+.font-semibold{
+    font-weight: 600;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.tracking-tight{
+    letter-spacing: -0.025em;
+}
+.text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-400{
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.text-slate-900{
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+.text-gray-700{
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+.text-gray-600{
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-green-600{
+    --tw-text-opacity: 1;
+    color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+.text-gray-500{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.opacity-0{
+    opacity: 0;
+}
+.filter{
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.hover\:bg-light-gray:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+.hover\:drop-shadow-xl:hover{
+    --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.dark .dark\:bg-main-dark-bg{
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 35 42 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-secondary-dark-bg{
+    --tw-bg-opacity: 1;
+    background-color: rgb(51 55 62 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-\[\#424\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(68 34 68 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-\[\#4246\]{
+    background-color: #4246;
+}
+.dark .dark\:bg-\[\#42464D\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(66 70 77 / var(--tw-bg-opacity));
+}
+.dark .dark\:text-gray-200{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.dark .dark\:text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.dark .dark\:hover\:text-black:hover{
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+@media (min-width: 768px){
+
+    .md\:static{
+        position: static;
+    }
+
+    .md\:right-40{
+        right: 10rem;
+    }
+
+    .md\:m-10{
+        margin: 2.5rem;
+    }
+
+    .md\:mx-6{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .md\:ml-72{
+        margin-left: 18rem;
+    }
+
+    .md\:ml-3{
+        margin-left: 0.75rem;
+    }
+
+    .md\:hidden{
+        display: none;
+    }
+
+    .md\:w-56{
+        width: 14rem;
+    }
+
+    .md\:w-780{
+        width: 780px;
+    }
+
+    .md\:overflow-hidden{
+        overflow: hidden;
+    }
+
+    .md\:p-10{
+        padding: 2.5rem;
+    }
+
+    .md\:hover\:overflow-auto:hover{
+        overflow: auto;
+    }
+}
+@media (min-width: 1024px){
+
+    .lg\:w-80{
+        width: 20rem;
+    }
+
+    .lg\:flex-nowrap{
+        flex-wrap: nowrap;
+    }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiLCI8bm8gc291cmNlPiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtJQUNJLFNBQVM7SUFDVCxTQUFTO0lBQ1Qsb0NBQW9DO0FBQ3hDOztBQUVBOztDQUFjOztBQUFkOzs7Q0FBYzs7QUFBZDs7O0VBQUEsc0JBQWMsRUFBZCxNQUFjO0VBQWQsZUFBYyxFQUFkLE1BQWM7RUFBZCxtQkFBYyxFQUFkLE1BQWM7RUFBZCxxQkFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7RUFBQSxnQkFBYztBQUFBOztBQUFkOzs7OztDQUFjOztBQUFkO0VBQUEsZ0JBQWMsRUFBZCxNQUFjO0VBQWQsOEJBQWMsRUFBZCxNQUFjLEVBQWQsTUFBYztFQUFkLFdBQWMsRUFBZCxNQUFjO0VBQWQsNE5BQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7OztDQUFjOztBQUFkO0VBQUEsU0FBYyxFQUFkLE1BQWM7RUFBZCxvQkFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7OztDQUFjOztBQUFkO0VBQUEsU0FBYyxFQUFkLE1BQWM7RUFBZCxjQUFjLEVBQWQsTUFBYztFQUFkLHFCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEseUNBQWM7VUFBZCxpQ0FBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOzs7Ozs7RUFBQSxrQkFBYztFQUFkLG9CQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxjQUFjO0VBQWQsd0JBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7RUFBQSxtQkFBYztBQUFBOztBQUFkOzs7Q0FBYzs7QUFBZDs7OztFQUFBLCtHQUFjLEVBQWQsTUFBYztFQUFkLGNBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxjQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7O0VBQUEsY0FBYztFQUFkLGNBQWM7RUFBZCxrQkFBYztFQUFkLHdCQUFjO0FBQUE7O0FBQWQ7RUFBQSxlQUFjO0FBQUE7O0FBQWQ7RUFBQSxXQUFjO0FBQUE7O0FBQWQ7Ozs7Q0FBYzs7QUFBZDtFQUFBLGNBQWMsRUFBZCxNQUFjO0VBQWQscUJBQWMsRUFBZCxNQUFjO0VBQWQseUJBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7Ozs7Q0FBYzs7QUFBZDs7Ozs7RUFBQSxvQkFBYyxFQUFkLE1BQWM7RUFBZCxlQUFjLEVBQWQsTUFBYztFQUFkLG9CQUFjLEVBQWQsTUFBYztFQUFkLG9CQUFjLEVBQWQsTUFBYztFQUFkLGNBQWMsRUFBZCxNQUFjO0VBQWQsU0FBYyxFQUFkLE1BQWM7RUFBZCxVQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOztFQUFBLG9CQUFjO0FBQUE7O0FBQWQ7OztDQUFjOztBQUFkOzs7O0VBQUEsMEJBQWMsRUFBZCxNQUFjO0VBQWQsNkJBQWMsRUFBZCxNQUFjO0VBQWQsc0JBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxhQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxnQkFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsd0JBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7RUFBQSxZQUFjO0FBQUE7O0FBQWQ7OztDQUFjOztBQUFkO0VBQUEsNkJBQWMsRUFBZCxNQUFjO0VBQWQsb0JBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSx3QkFBYztBQUFBOztBQUFkOzs7Q0FBYzs7QUFBZDtFQUFBLDBCQUFjLEVBQWQsTUFBYztFQUFkLGFBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxrQkFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOzs7Ozs7Ozs7Ozs7O0VBQUEsU0FBYztBQUFBOztBQUFkO0VBQUEsU0FBYztFQUFkLFVBQWM7QUFBQTs7QUFBZDtFQUFBLFVBQWM7QUFBQTs7QUFBZDs7O0VBQUEsZ0JBQWM7RUFBZCxTQUFjO0VBQWQsVUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEsZ0JBQWM7QUFBQTs7QUFBZDs7O0NBQWM7O0FBQWQ7O0VBQUEsVUFBYyxFQUFkLE1BQWM7RUFBZCxjQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOztFQUFBLGVBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDtFQUFBLGVBQWM7QUFBQTs7QUFBZDs7OztDQUFjOztBQUFkOzs7Ozs7OztFQUFBLGNBQWMsRUFBZCxNQUFjO0VBQWQsc0JBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7O0VBQUEsZUFBYztFQUFkLFlBQWM7QUFBQTs7QUFBZDtJQUFBLHdCQUFjO0lBQWQsd0JBQWM7SUFBZCxtQkFBYztJQUFkLG1CQUFjO0lBQWQsY0FBYztJQUFkLGNBQWM7SUFBZCxjQUFjO0lBQWQsZUFBYztJQUFkLGVBQWM7SUFBZCxhQUFjO0lBQWQsYUFBYztJQUFkLGtCQUFjO0lBQWQsc0NBQWM7SUFBZCxlQUFjO0lBQWQsb0JBQWM7SUFBZCxzQkFBYztJQUFkLHVCQUFjO0lBQWQsd0JBQWM7SUFBZCxrQkFBYztJQUFkLDJCQUFjO0lBQWQsNEJBQWM7SUFBZCxzQ0FBYztJQUFkLGtDQUFjO0lBQWQsMkJBQWM7SUFBZCxzQkFBYztJQUFkLDhCQUFjO0lBQWQsWUFBYztJQUFkLGtCQUFjO0lBQWQsZ0JBQWM7SUFBZCxpQkFBYztJQUFkLGtCQUFjO0lBQWQsY0FBYztJQUFkLGdCQUFjO0lBQWQsYUFBYztJQUFkLG1CQUFjO0lBQWQscUJBQWM7SUFBZCwyQkFBYztJQUFkLHlCQUFjO0lBQWQsMEJBQWM7SUFBZCwyQkFBYztJQUFkLHVCQUFjO0lBQWQsd0JBQWM7SUFBZCx5QkFBYztJQUFkO0FBQWM7O0FBQWQ7SUFBQSx3QkFBYztJQUFkLHdCQUFjO0lBQWQsbUJBQWM7SUFBZCxtQkFBYztJQUFkLGNBQWM7SUFBZCxjQUFjO0lBQWQsY0FBYztJQUFkLGVBQWM7SUFBZCxlQUFjO0lBQWQsYUFBYztJQUFkLGFBQWM7SUFBZCxrQkFBYztJQUFkLHNDQUFjO0lBQWQsZUFBYztJQUFkLG9CQUFjO0lBQWQsc0JBQWM7SUFBZCx1QkFBYztJQUFkLHdCQUFjO0lBQWQsa0JBQWM7SUFBZCwyQkFBYztJQUFkLDRCQUFjO0lBQWQsc0NBQWM7SUFBZCxrQ0FBYztJQUFkLDJCQUFjO0lBQWQsc0JBQWM7SUFBZCw4QkFBYztJQUFkLFlBQWM7SUFBZCxrQkFBYztJQUFkLGdCQUFjO0lBQWQsaUJBQWM7SUFBZCxrQkFBYztJQUFkLGNBQWM7SUFBZCxnQkFBYztJQUFkLGFBQWM7SUFBZCxtQkFBYztJQUFkLHFCQUFjO0lBQWQsMkJBQWM7SUFBZCx5QkFBYztJQUFkLDBCQUFjO0lBQWQsMkJBQWM7SUFBZCx1QkFBYztJQUFkLHdCQUFjO0lBQWQseUJBQWM7SUFBZDtBQUFjO0FBRWQ7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUEsa0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsa0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQSxrQkFBbUI7SUFBbkI7QUFBbUI7QUFBbkI7SUFBQSxrQkFBbUI7SUFBbkI7QUFBbUI7QUFBbkI7SUFBQSxrQkFBbUI7SUFBbkI7QUFBbUI7QUFBbkI7SUFBQSxrQkFBbUI7SUFBbkI7QUFBbUI7QUFBbkI7SUFBQSxrQkFBbUI7SUFBbkI7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBLG1CQUFtQjtJQUFuQjtBQUFtQjtBQUFuQjtJQUFBLG1CQUFtQjtJQUFuQjtBQUFtQjtBQUFuQjtJQUFBLGtCQUFtQjtJQUFuQjtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUEsaUJBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsbUJBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsa0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQUFuQjtJQUFBO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUEsb0JBQW1CO0lBQW5CO0FBQW1CO0FBQW5CO0lBQUE7QUFBbUI7QUFBbkI7SUFBQTtBQUFtQjtBQVZuQjtJQUFBLG1CQ0FBO0lEQUE7Q0NBQTtBREFBO0lBQUEsc0dDQUE7SURBQTtDQ0FBO0FEQUE7SUFBQSxtQkNBQTtJREFBO0NDQUE7QURBQTtJQUFBLG1CQ0FBO0lEQUE7Q0NBQTtBREFBO0lBQUEsbUJDQUE7SURBQTtDQ0FBO0FEQUE7SUFBQTtDQ0FBO0FEQUE7SUFBQSxtQkNBQTtJREFBO0NDQUE7QURBQTtJQUFBLHFCQ0FBO0lEQUE7Q0NBQTtBREFBO0lBQUEscUJDQUE7SURBQTtDQ0FBO0FEQUE7SUFBQSxxQkNBQTtJREFBO0NDQUE7QURBQTs7SUFBQTtRQUFBO0tDQUE7O0lEQUE7UUFBQTtLQ0FBOztJREFBO1FBQUE7S0NBQTs7SURBQTtRQUFBLG9CQ0FBO1FEQUE7S0NBQTs7SURBQTtRQUFBO0tDQUE7O0lEQUE7UUFBQTtLQ0FBOztJREFBO1FBQUE7S0NBQTs7SURBQTtRQUFBO0tDQUE7O0lEQUE7UUFBQTtLQ0FBOztJREFBO1FBQUE7S0NBQTs7SURBQTtRQUFBO0tDQUE7O0lEQUE7UUFBQTtLQ0FBO0NBQUE7QURBQTs7SUFBQTtRQUFBO0tDQUE7O0lEQUE7UUFBQTtLQ0FBO0NBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybCgnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1PcGVuK1NhbnM6d2dodEA0MDA7NTAwOzYwMDs3MDAmZGlzcGxheT1zd2FwJyk7XG5cbmJvZHkge1xuICAgIG1hcmdpbjogMDtcbiAgICBwYWRkaW5nOjA7XG4gICAgZm9udC1mYW1pbHk6IFwiT3BlbiBTYW5zXCIsIHNhbnMtc2VyaWY7XG59XG5cbkB0YWlsd2luZCBiYXNlO1xuQHRhaWx3aW5kIGNvbXBvbmVudHM7XG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xuIixudWxsXSwic291cmNlUm9vdCI6IiJ9 */</style><style>@import url(https://cdn.syncfusion.com/ej2/material.css);</style><style>.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
+  }
+}
+
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* color-picker style  */
+
+ #preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
+  border: none;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsbURBQW1EO0FBQ3JEO0FBQ0E7O0VBRUUsY0FBYztBQUNoQjtBQUNBO0VBQ0U7SUFDRSxpQkFBaUI7RUFDbkI7QUFDRjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFVBQVU7QUFDWjtBQUNBO0VBQ0Usb0NBQW9DO0VBQ3BDLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsNkJBQTZCO0FBQy9COztBQUVBLHdCQUF3Qjs7Q0FFdkI7RUFDQzs7YUFFVztFQUNYLHFCQUFxQjtFQUNyQixZQUFZO0VBQ1osY0FBYztFQUNkLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsWUFBWTtBQUNkIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vY2RuLnN5bmNmdXNpb24uY29tL2VqMi9tYXRlcmlhbC5jc3MnKTtcblxuLnNpZGViYXIge1xuICBib3gtc2hhZG93OiByZ2IoMTEzIDEyMiAxMzEgLyAxMSUpIDBweCA3cHggMzBweCAwcHg7XG59XG4ubmF2LWl0ZW0sXG4ubmF2YmFyIHtcbiAgei1pbmRleDogMTAwMDA7XG59XG5AbWVkaWEgIHNjcmVlbiBhbmQgKG1heC13aWR0aDo4MDBweCkge1xuICAuc2lkZWJhcntcbiAgICB6LWluZGV4OiAxMDAwMDAwMDtcbiAgfVxufVxuXG4uZS1kbGctY2VudGVyLWNlbnRlciwgLmUtcXVpY2stcG9wdXAtd3JhcHBlci5lLWRldmljZXtcbiAgei1pbmRleDogMTAwMDAwMCAhaW1wb3J0YW50O1xufVxuXG46Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgd2lkdGg6IDZweDtcbn1cbjo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjE2LCAyMTYsIDIxNik7XG4gIGJvcmRlci1yYWRpdXM6IDQwcHg7XG59XG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG59XG5cbi8qIGNvbG9yLXBpY2tlciBzdHlsZSAgKi9cblxuICNwcmV2aWV3IHtcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnRcbiAgICB1cmwoJ2h0dHBzOi8vZWoyLnN5bmNmdXNpb24uY29tL3JlYWN0L2RlbW9zL3NyYy9jb2xvci1waWNrZXIvaW1hZ2VzL3Blbi5wbmcnKVxuICAgIG5vLXJlcGVhdDtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBoZWlnaHQ6IDgwcHg7XG4gIG1hcmdpbjogMTBweCAwO1xuICBtaW4td2lkdGg6IDMwMHB4O1xuICBtYXgtd2lkdGg6IDYwMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA4MDAwO1xufVxuXG4uZS1pbnB1dC1ncm91cDpub3QoLmUtZmxvYXQtaWNvbi1sZWZ0KSwgLmUtaW5wdXQtZ3JvdXAuZS1zdWNjZXNzOm5vdCguZS1mbG9hdC1pY29uLWxlZnQpLCAuZS1pbnB1dC1ncm91cC5lLXdhcm5pbmc6bm90KC5lLWZsb2F0LWljb24tbGVmdCksIC5lLWlucHV0LWdyb3VwLmUtZXJyb3I6bm90KC5lLWZsb2F0LWljb24tbGVmdCksIC5lLWlucHV0LWdyb3VwLmUtY29udHJvbC13cmFwcGVyOm5vdCguZS1mbG9hdC1pY29uLWxlZnQpLCAuZS1pbnB1dC1ncm91cC5lLWNvbnRyb2wtd3JhcHBlci5lLXN1Y2Nlc3M6bm90KC5lLWZsb2F0LWljb24tbGVmdCksIC5lLWlucHV0LWdyb3VwLmUtY29udHJvbC13cmFwcGVyLmUtd2FybmluZzpub3QoLmUtZmxvYXQtaWNvbi1sZWZ0KSwgLmUtaW5wdXQtZ3JvdXAuZS1jb250cm9sLXdyYXBwZXIuZS1lcnJvcjpub3QoLmUtZmxvYXQtaWNvbi1sZWZ0KXtcbiAgYm9yZGVyOiBub25lO1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1084.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class=""><div class="flex relative dark:bg-main-dark-bg"><div class="fixed right-4 bottom-4" style="z-index: 100;"><div class="e-control e-tooltip e-lib"><button type="button" class="text-3xl p-3 hover:drops-shadow-xl hover:bg-light-gray text-white" style="background: rgb(3, 201, 215); border-radius: 50%;"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></button></div></div><div class="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white"><div class="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10"><div class="flex justify-between items-center "><a class="items-center gap-4 ml-4 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900" href="http://localhost:3000/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M23.9477 10.8913a.1735.1735 0 00-.061-.1178c-2.5032-2.078-4.5288-2.9261-6.9905-2.9261-1.3127 0-2.32.2638-2.9916.7827-.5822.4492-.8896 1.0772-.8896 1.812 0 2.0605 2.5184 3.0003 5.4358 4.0883 1.5023.5604 3.057 1.1404 4.483 1.9319a.1626.1626 0 00.0828.0218.187.187 0 00.0589-.011c.0458-.0174.085-.0523.1025-.1002.545-1.3955.822-2.8673.822-4.374a13.082 13.082 0 00-.0523-1.1076zm-4.81 10.4791c-1.0423-.785-2.5795-1.3824-4.2061-2.0125-1.9362-.7501-4.132-1.6027-5.7803-2.913-1.8665-1.4871-2.7757-3.3623-2.7757-5.7324 0-2.1281.883-3.9466 2.5533-5.2614 1.873-1.474 4.7119-2.2546 8.2071-2.2546.966 0 1.8883.0589 2.743.1766a.1696.1696 0 00.1788-.098.17.17 0 00-.0414-.2007C17.814 1.0924 14.9664.0022 12.001.0022c-3.2052 0-6.2186 1.2472-8.4862 3.5148C1.2494 5.7825 0 8.796 0 11.999c0 3.2051 1.2472 6.2185 3.5149 8.484 2.2654 2.2654 5.2788 3.5148 8.4862 3.5148 2.5903 0 5.0564-.8133 7.1344-2.3505a.1714.1714 0 00.0697-.1374.1735.1735 0 00-.0676-.1395Z"></path></svg><span>Zaib Developer</span></a><div class="e-control e-tooltip e-lib" tabindex="0"><button type="button" class="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z" opacity=".87"></path><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"></path></svg></button></div></div><div class="mt-10 bg-white-400"><div><p class="text-gray-400 m-3 mt-4 uppercase">Dashboard</p><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/ecommerce"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span class="capitalize">ecommerce</span></a></div><div><p class="text-gray-400 m-3 mt-4 uppercase">Pages</p><a aria-current="page" class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2" href="http://localhost:3000/orders" style="background-color: rgb(3, 201, 215);"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M922.9 701.9H327.4l29.9-60.9 496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9-56.4 315.8-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z"></path></svg><span class="capitalize">orders</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/employees"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"></path><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"></path></g></svg><span class="capitalize">employees</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/customers"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 7h5v2h-5V7zm-2 5h7v2h-7v-2zm3 5h4v2h-4v-2zM2 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H2zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"></path></g></svg><span class="capitalize">customers</span></a></div><div><p class="text-gray-400 m-3 mt-4 uppercase">Apps</p><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/calendar"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"></path></svg><span class="capitalize">calendar</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/kanban"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h11zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z"></path><path d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3z"></path></svg><span class="capitalize">kanban</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/editor"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg><span class="capitalize">editor</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/color-picker"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 13.998c-.092.065-2 2.083-2 3.5 0 1.494.949 2.448 2 2.5.906.044 2-.891 2-2.5 0-1.5-1.908-3.435-2-3.5zm-16.586-1c0 .534.208 1.036.586 1.414l5.586 5.586c.378.378.88.586 1.414.586s1.036-.208 1.414-.586l7-7-.707-.707L11 4.584 8.707 2.291 7.293 3.705l2.293 2.293L4 11.584c-.378.378-.586.88-.586 1.414zM11 7.412l5.586 5.586L11 18.584h.001l-.001 1v-1l-5.586-5.586L11 7.412z"></path></svg><span class="capitalize">color-picker</span></a></div><div><p class="text-gray-400 m-3 mt-4 uppercase">Charts</p><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/line"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 747H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM165.7 621.8l39.7 39.5c3.1 3.1 8.2 3.1 11.3 0l234.7-233.9 97.6 97.3a32.11 32.11 0 0 0 45.2 0l264.2-263.2c3.1-3.1 3.1-8.2 0-11.3l-39.7-39.6a8.03 8.03 0 0 0-11.3 0l-235.7 235-97.7-97.3a32.11 32.11 0 0 0-45.2 0L165.7 610.5a7.94 7.94 0 0 0 0 11.3z"></path></svg><span class="capitalize">line</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/area"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-616-64h536c4.4 0 8-3.6 8-8V284c0-7.2-8.7-10.7-13.7-5.7L592 488.6l-125.4-124a8.03 8.03 0 0 0-11.3 0l-189 189.6a7.87 7.87 0 0 0-2.3 5.6V720c0 4.4 3.6 8 8 8z"></path></svg><span class="capitalize">area</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/bar"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-600-80h56c4.4 0 8-3.6 8-8V560c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V384c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v320c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V462c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v242c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v400c0 4.4 3.6 8 8 8z"></path></svg><span class="capitalize">bar</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/pie"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg><span class="capitalize">pie</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/financial"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zM5 7v5h4V7H5zm13 3h3v9h-3v3h-2v-3h-3v-9h3V7h2v3zm-3 2v5h4v-5h-4z"></path></g></svg><span class="capitalize">financial</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/color-mapping"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"></path></svg><span class="capitalize">color-mapping</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/pyramid"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 71.3L14.72 416H497.3zm0 31.4l21 30-21 30-21-30zm-32 45.7l21 30-21 30-21-30zm64 0l21 30-21 30-21-30zm-86.7 32.4l-9.3 13.4 21 30-21 29.9-21-30zM320 194.1l21 30-21 30-21-30zm-64 .1l21 29.9-21 30-21-30zm-88.6 35l-7.4 10.7 21 30-21 29.9-21-30zM352 239.8l21 30-21 30-21-30zm-128 .1l21 30-21 29.9-21-29.9zm64 0l21 30-21 29.9-21-29.9zm-154.3 37.6l-5.7 8.1 21 30-21 29.9-21-30zm245.9 1.8l25.4 36.2-21 30-21-29.9 21-30zM192 285.6l21 30-21 29.9-21-29.9zm64 0l21 30-21 29.9-21-29.9zm64 0l21 30-21 29.9-21-29.9zM98.51 327.7l-2.52 3.6 21.01 30L91.29 398h-42zm315.19.4l49 69.9h-42L395 361.3l21-30zM160 331.3l21 30-21 29.9-21-29.9zm64 0l21 30-21 29.9-21-29.9zm64 0l21 30-21 29.9-21-29.9zm64 0l21 30-21 29.9-21-29.9zm-224 45.8l14.6 20.9h-29.2zm64 0l14.6 20.9h-29.2zm64 0l14.6 20.9h-29.2zm64 0l14.6 20.9h-29.2zm64 0l14.6 20.9h-29.2z"></path></svg><span class="capitalize">pyramid</span></a><a class="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2" href="http://localhost:3000/stacked"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-600-80h56c4.4 0 8-3.6 8-8V560c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V384c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v320c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V462c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v242c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v400c0 4.4 3.6 8 8 8z"></path></svg><span class="capitalize">stacked</span></a></div></div></div></div><div class=" dark:bg-main-dark-bg bg-main-bg min-h-screen  w-full 
+          md:ml-72"><div class="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full"><div class="flex justify-between p-2 md:mx-6 relative"><div class="e-control e-tooltip e-lib" tabindex="0"><button type="button" class="relative text-xl rounded-full p-3 hover:bg-light-gray" style="color: rgb(3, 201, 215);"><span class="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"></span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></button></div><div class="flex"><div class="e-control e-tooltip e-lib"><button type="button" class="relative text-xl rounded-full p-3 hover:bg-light-gray" style="color: rgb(3, 201, 215);"><span class="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"></span><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></button></div><div class="e-control e-tooltip e-lib"><button type="button" class="relative text-xl rounded-full p-3 hover:bg-light-gray" style="color: rgb(3, 201, 215);"><span class="absolute inline-flex rounded-full h-2 w-2 right-2 top-2" style="background: rgb(3, 201, 215);"></span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path></svg></button></div><div class="e-control e-tooltip e-lib"><button type="button" class="relative text-xl rounded-full p-3 hover:bg-light-gray" style="color: rgb(3, 201, 215);"><span class="absolute inline-flex rounded-full h-2 w-2 right-2 top-2" style="background: rgb(3, 201, 215);"></span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z"></path></g></svg></button></div><div class="e-control e-tooltip e-lib"><div class="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"><img src="./React App_files/shahzaib1.8b4aff748a12f2c8989b.jfif" class="rounded-full w-8 h-8"><p><span class="text-gray-400 text-14">Hi,</span> <span class="text-gray-400 font-bold ml-1 text-14">Shahzaib</span></p><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 text-14" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></div></div>  <div class="nav-item absolute right-5 md:right-40 top-16 bg-gray-400 dark:bg-[#42464D] p-8 rounded-lg w-96"><h1>notification</h1><button type="button" class="text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray" style="color: rgb(153, 171, 180); border-radius: 50%;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z" opacity=".87"></path><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"></path></svg></button></div>  </div></div></div><div><div class="m-2 bg-white p-2 md:p-10 rounded-3xl"><div class="mt-10 mb-6"><p class="text-gray-400">Page</p><p class="text-3xl font-extrabold tracking-tight text-slate-900">Orders</p></div><div id="gridcomp" class="e-control e-grid e-lib e-gridhover e-responsive e-default e-droppable e-tooltip e-keyboard e-noselect" data-role="grid" tabindex="0" style="width: auto;"><div class="e-spinner-pane e-spin-hide"><div class="e-spinner-inner"><svg class="e-spin-material" id="y85W2" viewBox="0 0 30 30" style="height: 30px; width: 30px; transform-origin: 15px 15px 15px;"><path class="e-path-circle" d="M15,1.5A13.5,13.5 0 1 1 1.5,15" stroke-width="3" stroke-dasharray="63.61725123519331" stroke-dashoffset="190.0035236891107" transform="rotate(0 15 15)"></path></svg></div></div><div class="e-gridheader e-lib e-droppable"><div class="e-headercontent"><table class="e-table e-sortfilter" cellspacing="0.25px" role="grid" aria-colcount="7" aria-rowcount="12"><colgroup id="gridcompcolgroup"><col style="width: 120px;"><col style="width: 150px;"><col style="width: 150px;"><col style="width: 150px;"><col style="width: 120px;"><col style="width: 120px;"><col style="width: 150px;"></colgroup><thead role="rowgroup"><tr class="e-columnheader" role="row"><th class="e-headercell e-centeralign e-defaultcursor" role="columnheader" tabindex="-1" data-colindex="0" aria-colindex="1" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column0" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Image</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th><th class="e-headercell e-centeralign e-mousepointer" role="columnheader" tabindex="-1" data-colindex="1" aria-colindex="2" aria-sort="none" aria-description="Press Enter to sort" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column1" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Item</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th><th class="e-headercell e-centeralign e-mousepointer" role="columnheader" tabindex="-1" data-colindex="2" aria-colindex="3" aria-sort="none" aria-description="Press Enter to sort" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column2" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Customer Name</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th><th class="e-headercell e-centeralign e-mousepointer" role="columnheader" tabindex="-1" data-colindex="3" aria-colindex="4" aria-sort="none" aria-description="Press Enter to sort" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column3" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Total Amount</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th><th class="e-headercell e-centeralign e-mousepointer" role="columnheader" tabindex="-1" data-colindex="4" aria-colindex="5" aria-sort="none" aria-description="Press Enter to sort" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column4" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Status</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th><th class="e-headercell e-centeralign e-mousepointer" role="columnheader" tabindex="-1" data-colindex="5" aria-colindex="6" aria-sort="none" aria-description="Press Enter to sort" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column5" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Order ID</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th><th class="e-headercell e-lastcell e-centeralign e-mousepointer" role="columnheader" tabindex="-1" data-colindex="6" aria-colindex="7" aria-sort="none" aria-description="Press Enter to sort" aria-rowspan="1" aria-colspan="1"><div e-mappinguid="grid-column6" class="e-headercelldiv" style="text-align: center;"><span class="e-headertext">Location</span></div><div class="e-sortfilterdiv e-icons" aria-hidden="true"></div></th></tr></thead><tbody class="e-hide" role="rowgroup"><tr role="row"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody><caption class="e-hide">gridcomp_header_table</caption></table></div></div><div class="e-gridcontent"><div class="e-content" aria-busy="false" style="height: auto; overflow-y: auto;"><table class="e-table" cellspacing="0.25px" role="grid" id="gridcomp_content_table" aria-multiselectable="false" aria-colcount="7"><colgroup id="content-gridcompcolgroup"><col style="width: 120px;"><col style="width: 150px;"><col style="width: 150px;"><col style="width: 150px;"><col style="width: 120px;"><col style="width: 120px;"><col style="width: 150px;"></colgroup><tbody role="rowgroup"><tr role="row" class="e-row" aria-rowindex="1" data-rowindex="0" data-uid="grid-row31"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="0" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product6.3260a3b510aa12fc136b.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Fresh Tomato column header Item" data-colindex="1" aria-colindex="2" index="0" style="text-align: center;">Fresh Tomato</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Vinet column header Customer Name" data-colindex="2" aria-colindex="3" index="0" style="text-align: center;">Vinet</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$32.38 column header Total Amount" data-colindex="3" aria-colindex="4" index="0" style="text-align: center;">$32.38</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="0" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(251, 150, 120);">pending</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="10248 column header Order ID" data-colindex="5" aria-colindex="6" index="0" style="text-align: center;">10248</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="0" style="text-align: center;">USA</td></tr><tr role="row" class="e-row e-altrow" aria-rowindex="2" data-rowindex="1" data-uid="grid-row32"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="1" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product5.f4c5d8f991b753ca0fcc.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Butter Scotch column header Item" data-colindex="1" aria-colindex="2" index="1" style="text-align: center;">Butter Scotch</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Carson Darrin column header Customer Name" data-colindex="2" aria-colindex="3" index="1" style="text-align: center;">Carson Darrin</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$56.34 column header Total Amount" data-colindex="3" aria-colindex="4" index="1" style="text-align: center;">$56.34</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="1" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(139, 231, 139);">complete</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="345653 column header Order ID" data-colindex="5" aria-colindex="6" index="1" style="text-align: center;">345653</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Delhi column header Location" data-colindex="6" aria-colindex="7" index="1" style="text-align: center;">Delhi</td></tr><tr role="row" class="e-row" aria-rowindex="3" data-rowindex="2" data-uid="grid-row33"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="2" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product7.69341801e3f5245c8020.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Candy Gucci column header Item" data-colindex="1" aria-colindex="2" index="2" style="text-align: center;">Candy Gucci</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Fran Perez column header Customer Name" data-colindex="2" aria-colindex="3" index="2" style="text-align: center;">Fran Perez</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$93.31 column header Total Amount" data-colindex="3" aria-colindex="4" index="2" style="text-align: center;">$93.31</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="2" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(3, 201, 215);">active</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="390457 column header Order ID" data-colindex="5" aria-colindex="6" index="2" style="text-align: center;">390457</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="New York column header Location" data-colindex="6" aria-colindex="7" index="2" style="text-align: center;">New York</td></tr><tr role="row" class="e-row e-altrow" aria-rowindex="4" data-rowindex="3" data-uid="grid-row34"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="3" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product4.767417bea17688d6d8ce.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Night Lamp column header Item" data-colindex="1" aria-colindex="2" index="3" style="text-align: center;">Night Lamp</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Anika Viseer column header Customer Name" data-colindex="2" aria-colindex="3" index="3" style="text-align: center;">Anika Viseer</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$93.31 column header Total Amount" data-colindex="3" aria-colindex="4" index="3" style="text-align: center;">$93.31</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="3" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(255, 92, 142);">canceled</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="893486 column header Order ID" data-colindex="5" aria-colindex="6" index="3" style="text-align: center;">893486</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Germany column header Location" data-colindex="6" aria-colindex="7" index="3" style="text-align: center;">Germany</td></tr><tr role="row" class="e-row" aria-rowindex="5" data-rowindex="4" data-uid="grid-row35"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="4" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product1.b8efc7a24c281ed8911b.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Healthcare Erbology column header Item" data-colindex="1" aria-colindex="2" index="4" style="text-align: center;">Healthcare Erbology</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Miron Vitold column header Customer Name" data-colindex="2" aria-colindex="3" index="4" style="text-align: center;">Miron Vitold</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$23.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="4" style="text-align: center;">$23.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="4" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: red;">rejected</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="748975 column header Order ID" data-colindex="5" aria-colindex="6" index="4" style="text-align: center;">748975</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Spain column header Location" data-colindex="6" aria-colindex="7" index="4" style="text-align: center;">Spain</td></tr><tr role="row" class="e-row e-altrow" aria-rowindex="6" data-rowindex="5" data-uid="grid-row36"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="5" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product2.e93f12ec1b20980a1bd1.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Makeup Lancome Rouge column header Item" data-colindex="1" aria-colindex="2" index="5" style="text-align: center;">Makeup Lancome Rouge</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Omar Darobe column header Customer Name" data-colindex="2" aria-colindex="3" index="5" style="text-align: center;">Omar Darobe</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$95.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="5" style="text-align: center;">$95.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="5" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(255, 92, 142);">canceled</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="94757 column header Order ID" data-colindex="5" aria-colindex="6" index="5" style="text-align: center;">94757</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="5" style="text-align: center;">USA</td></tr><tr role="row" class="e-row" aria-rowindex="7" data-rowindex="6" data-uid="grid-row37"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="6" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product3.be6bce80c539b3222473.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Skincare column header Item" data-colindex="1" aria-colindex="2" index="6" style="text-align: center;">Skincare</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Lulia albu column header Customer Name" data-colindex="2" aria-colindex="3" index="6" style="text-align: center;">Lulia albu</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$17.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="6" style="text-align: center;">$17.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="6" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(3, 201, 215);">active</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="944895 column header Order ID" data-colindex="5" aria-colindex="6" index="6" style="text-align: center;">944895</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="6" style="text-align: center;">USA</td></tr><tr role="row" class="e-row e-altrow" aria-rowindex="8" data-rowindex="7" data-uid="grid-row38"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="7" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/product4.767417bea17688d6d8ce.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Headphone column header Item" data-colindex="1" aria-colindex="2" index="7" style="text-align: center;">Headphone</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Penjani column header Customer Name" data-colindex="2" aria-colindex="3" index="7" style="text-align: center;">Penjani</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$59.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="7" style="text-align: center;">$59.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="7" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(139, 231, 139);">complete</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="845954 column header Order ID" data-colindex="5" aria-colindex="6" index="7" style="text-align: center;">845954</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="7" style="text-align: center;">USA</td></tr><tr role="row" class="e-row" aria-rowindex="9" data-rowindex="8" data-uid="grid-row39"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="8" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/148648730-104158193-1592481791.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Shoes column header Item" data-colindex="1" aria-colindex="2" index="8" style="text-align: center;">Shoes</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Jie Yan column header Customer Name" data-colindex="2" aria-colindex="3" index="8" style="text-align: center;">Jie Yan</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$87.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="8" style="text-align: center;">$87.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="8" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(251, 150, 120);">pending</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="845954 column header Order ID" data-colindex="5" aria-colindex="6" index="8" style="text-align: center;">845954</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="8" style="text-align: center;">USA</td></tr><tr role="row" class="e-row e-altrow" aria-rowindex="10" data-rowindex="9" data-uid="grid-row40"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="9" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/pop-womens-garmin-watches-1641919013.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Watch column header Item" data-colindex="1" aria-colindex="2" index="9" style="text-align: center;">Watch</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Danai column header Customer Name" data-colindex="2" aria-colindex="3" index="9" style="text-align: center;">Danai</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$122.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="9" style="text-align: center;">$122.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="9" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(255, 92, 142);">canceled</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="874534 column header Order ID" data-colindex="5" aria-colindex="6" index="9" style="text-align: center;">874534</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="9" style="text-align: center;">USA</td></tr><tr role="row" class="e-row" aria-rowindex="11" data-rowindex="10" data-uid="grid-row41"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="10" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/dairy-free-ice-cream-eae372d.jpg" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Ice Cream column header Item" data-colindex="1" aria-colindex="2" index="10" style="text-align: center;">Ice Cream</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Miron column header Customer Name" data-colindex="2" aria-colindex="3" index="10" style="text-align: center;">Miron</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$87.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="10" style="text-align: center;">$87.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="10" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(3, 201, 215);">active</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="38489 column header Order ID" data-colindex="5" aria-colindex="6" index="10" style="text-align: center;">38489</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="USA column header Location" data-colindex="6" aria-colindex="7" index="10" style="text-align: center;">USA</td></tr><tr role="row" class="e-row e-altrow" aria-rowindex="12" data-rowindex="11" data-uid="grid-row42"><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Image" data-colindex="0" aria-colindex="1" index="11" style="text-align: center;"><div><img class="rounded-xl h-20 md:ml-3" src="./React App_files/photo-1576618148400-f54bed99fcfd" alt="order-item"></div></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Pan Cake column header Item" data-colindex="1" aria-colindex="2" index="11" style="text-align: center;">Pan Cake</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Frank column header Customer Name" data-colindex="2" aria-colindex="3" index="11" style="text-align: center;">Frank</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="$84.99 column header Total Amount" data-colindex="3" aria-colindex="4" index="11" style="text-align: center;">$84.99</td><td class="e-rowcell e-templatecell" role="gridcell" tabindex="-1" aria-label=" is template cell column header Status" data-colindex="4" aria-colindex="5" index="11" style="text-align: center;"><button type="button" class="text-white py-1 px-2 capitalize rounded-2xl text-md" style="background: rgb(139, 231, 139);">complete</button></td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="24546 column header Order ID" data-colindex="5" aria-colindex="6" index="11" style="text-align: center;">24546</td><td class="e-rowcell" role="gridcell" tabindex="-1" aria-label="Delhi column header Location" data-colindex="6" aria-colindex="7" index="11" style="text-align: center;">Delhi</td></tr></tbody></table></div></div><div class="e-gridpopup" style="display:none;"><div class="e-uptail e-tail"></div><div class="e-content" tabindex="-1"><span></span></div><div class="e-downtail e-tail"></div></div><div class="e-gridpager e-control e-pager e-lib" data-role="pager" tabindex="-1" aria-label="Pager Container"><div class="e-mfirst e-icons e-icon-first e-firstpagedisabled e-disable" title="Go to first page" tabindex="-1" aria-label="Go to first page" index="1" aria-owns="gridcomp_content_table"></div><div class="e-mprev e-icons e-icon-prev e-prevpagedisabled e-disable" title="Go to previous page" tabindex="-1" aria-label="Go to previous page" index="0" aria-owns="gridcomp_content_table"></div><div class="e-pagercontainer" role="navigation"><div class="e-first e-icons e-icon-first e-firstpagedisabled e-disable" title="Go to first page" aria-label="Go to first page" tabindex="-1" index="1" aria-owns="gridcomp_content_table"></div><div class="e-prev e-icons e-icon-prev e-prevpagedisabled e-disable" title="Go to previous page" aria-label="Go to previous page" tabindex="-1" index="0" aria-owns="gridcomp_content_table"></div><div><a class="e-link e-pp e-spacing e-nextprevitemdisabled e-disable" title="Go to previous pager items" role="link" aria-label="Go to previous pager items" tabindex="-1" name="Go to previous pager items" href="javascript:void(0);" index="-7">...</a></div><div class="e-numericcontainer"><div><a class="e-link e-numericitem e-spacing e-currentitem e-active" role="link" tabindex="-1" aria-label="Page 1 of 6 Pages" href="javascript:void(0);" name="Goto page1" index="1" aria-selected="true" aria-owns="gridcomp_content_table">1</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 2 of 6 Pages" href="javascript:void(0);" name="Goto page2" index="2" aria-owns="gridcomp_content_table">2</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 3 of 6 Pages" href="javascript:void(0);" name="Goto page3" index="3" aria-owns="gridcomp_content_table">3</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 4 of 6 Pages" href="javascript:void(0);" name="Goto page4" index="4" aria-owns="gridcomp_content_table">4</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 5 of 6 Pages" href="javascript:void(0);" name="Goto page5" index="5" aria-owns="gridcomp_content_table">5</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 6 of 6 Pages" href="javascript:void(0);" name="Goto page6" index="6" aria-owns="gridcomp_content_table">6</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 7 of undefined Pages" href="javascript:void(0);" name="Goto page7" aria-owns="gridcomp_content_table" style="display: none;">7</a></div><div><a class="e-link e-numericitem e-spacing e-pager-default" role="link" tabindex="-1" aria-label="Page 8 of undefined Pages" href="javascript:void(0);" name="Goto page8" aria-owns="gridcomp_content_table" style="display: none;">8</a></div></div><div><a class="e-link e-np e-spacing e-nextprevitemdisabled e-disable" title="Go to next pager items" role="link" aria-label="Go to next pager items" tabindex="-1" name="Go to next pager items" href="javascript:void(0);" index="NaN">...</a></div><div class="e-next e-icons e-icon-next e-nextpage e-pager-default" title="Go to next page" aria-label="Go to next page" tabindex="-1" index="2" aria-owns="gridcomp_content_table"></div><div class="e-last e-icons e-icon-last e-lastpage e-pager-default" title="Go to last page" aria-label="Go to last page" tabindex="0" index="6" aria-owns="gridcomp_content_table"></div></div><div class="e-parentmsgbar" aria-label="1 of 6 pages (65 items)"><span class="e-pagenomsg" style="textalign:right">1 of 6 pages </span><span class="e-pagecountmsg" style="textalign:right">(65 items)</span></div><div class="e-mnext e-icons e-icon-next e-nextpage e-pager-default" title="Go to next page" tabindex="-1" aria-label="Go to next page" index="2" aria-owns="gridcomp_content_table"></div><div class="e-mlast e-icons e-icon-last e-lastpage e-pager-default" title="Go to last page" tabindex="-1" aria-label="Go to last page" index="6" aria-owns="gridcomp_content_table"></div></div><ul id="contextmenu_1" style="display: none;"></ul><textarea class="e-clipboard" style="opacity: 0" tabindex="-1" aria-label="clipboard"></textarea></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+<div class="e-contextmenu-wrapper e-grid-menu e-lib e-keyboard"><ul id="gridcomp_cmenu" class="e-control e-contextmenu e-lib e-menu-parent" role="menubar" tabindex="0" style="z-index: 1000000000;"><li class="e-menu-item e-blankicon" id="gridcomp_cmenu_AutoFit" role="menuitem" data-value="null" tabindex="-1">Autofit this column</li><li class="e-menu-item e-blankicon" id="gridcomp_cmenu_AutoFitAll" role="menuitem" data-value="null" tabindex="-1">Autofit all columns</li><li class="e-menu-item " id="gridcomp_cmenu_SortAscending" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-icon-ascending"></span>Sort Ascending</li><li class="e-menu-item " id="gridcomp_cmenu_SortDescending" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-icon-descending"></span>Sort Descending</li><li class="e-menu-item " id="gridcomp_cmenu_Copy" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-copy"></span>Copy</li><li class="e-menu-item " id="gridcomp_cmenu_Edit" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-edit"></span>Edit Record</li><li class="e-menu-item " id="gridcomp_cmenu_Delete" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-delete"></span>Delete Record</li><li class="e-menu-item " id="gridcomp_cmenu_Save" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-save"></span>Save</li><li class="e-menu-item " id="gridcomp_cmenu_Cancel" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-cancel"></span>Cancel</li><li class="e-menu-item " id="gridcomp_cmenu_FirstPage" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-icon-first"></span>First Page</li><li class="e-menu-item " id="gridcomp_cmenu_PrevPage" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-icon-prev"></span>Previous Page</li><li class="e-menu-item " id="gridcomp_cmenu_LastPage" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-icon-last"></span>Last Page</li><li class="e-menu-item " id="gridcomp_cmenu_NextPage" role="menuitem" data-value="null" tabindex="-1"><span class="e-menu-icon e-icons e-icon-next"></span>Next Page</li><li class="e-menu-item e-blankicon e-menu-caret-icon" id="gridcomp_cmenu_export" data-value="null" tabindex="-1" aria-haspopup="true" aria-expanded="false">Export<span class="e-icons e-caret"></span></li></ul></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
